@@ -1,0 +1,131 @@
+* Limit the container in
+ * width for big screens
+ */
+.container {
+	width: 960px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+  
+}
+img{
+  height:auto;
+  max-width:70px;
+  float: left;
+  margin-left: 20px;
+  display: inline;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+#header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+  background: black;
+  position: fixed;
+  top:0;
+  width:100%;
+
+}
+
+h1{
+  color:white;
+  flex: 1;
+  margin-left: 20px;
+}
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.nav-bar ul {
+	text-align: center;
+  margin-right: 2em;
+  
+}
+.nav-bar li {
+	display: inline;
+   padding: 10px;
+  list-style:none;
+
+}
+.nav-bar a {
+	display: inline-block;
+	padding: 1em 1.5em;
+  color: white;
+  font-size:110%;
+}
+
+
+/* Change background on mouse-over */
+.nav-bar a:hover {
+  background: #92DFF3;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 960px) {
+	#header .container {
+		justify-content: space-between;
+	}
+}
+/*general*/
+#about, #inspiration{
+  text-align: center;
+  margin: 1em 2em 1em 2em;
+}
+/*middle*/
+iframe{
+  margin-bottom:60px;
+}
+/*form*/
+
+#pricing{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top:90px;
+}
+#pricing input[type='email'] {
+    max-width: 350px;
+    width: 100%;
+    padding: 5px;
+}
+#pricing input[type='submit'] {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+form{
+  display:block;
+  text-align:center;
+  margin-bottom:50px;
+}

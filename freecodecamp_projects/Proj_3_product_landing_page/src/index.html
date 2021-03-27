@@ -1,23 +1,26 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<body class="main">
-  <header id="header">
-    <div class="container">
-      <img id="header-img" src="https://image.freepik.com/free-vector/set-three-colored-bass-guitars_23-2147622034.jpg" width="15%" height="15%" alt="three bass guitars logo">
-      <h1> Bass Guitar Bros </h1>
+<body>
+  <div class="navbar">
+    <header id="header">
+      <div class="container">
+        <img id="header-img" src="https://image.freepik.com/free-vector/set-three-colored-bass-guitars_23-2147622034.jpg" width="80px" height="80px" alt="three bass guitars logo">
+        <a class="logo" href="#"> Bass Guitar Bros </a>
 
-      <nav class="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#inspiration">Inspiration</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#inspiration">Inspiration</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
   <section id="about">
-    <div>
-      <h2>Welcome to the best page about Bass Guitars!</h2>
+    <div class="container">
+      <h1>Welcome to the best page about Bass Guitars!</h1>
       <p>The bass guitar, electric bass or simply bass, is the lowest-pitched member of the guitar family. It is a plucked string instrument similar in appearance and construction to an electric or an acoustic guitar, but with a longer neck and scale length, and typically four to six strings or courses. Since the mid-1950s, the bass guitar has largely replaced the double bass in popular music.</p>
 
       <p>The four-string bass is usually tuned the same as the double bass, which corresponds to pitches one octave lower than the four lowest-pitched strings of a guitar (E, A, D, and G). However, it is also possible to tune the strings differently for playing specific genres of songs.</p>
@@ -26,17 +29,17 @@
   </section>
 
   <section id="inspiration">
-    <div>
-      <h3> Do you want to get inspired?</h3>
+    <div class="container">
+      <h2> Do you want to get inspired?</h2>
       <p>Check out the video of how Homer discovered bass:</p>
-      <iframe id="video" width="760" height="315" src="https://www.youtube.com/embed/YPhO5g39vpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="iframe-container">
+        <iframe id="video" width="760" height="315" src="https://www.youtube.com/embed/YPhO5g39vpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
-  <div>
-    <section id="pricing">
-
-      <h4>Bass prices</h4>
+  <section id="pricing">
+    <div class="container">
       <div class="product" id="electrical">
         <div class="level">Electrical Bass</div>
         <h5>800$</h5>
@@ -67,14 +70,16 @@
         </ol>
         <button class="btn">Select</button>
       </div>
+    </div>
+  </section>
 
-      <div>
-        <h5>Wanna sign up for the newsletter?</h5>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          <input type="submit" id="submit" value="Join the bass bros!">
-        </form>
-      </div>
-    </section>
-  </div>
+  <section class="contact">
+    <div class="container">
+      <h3>Wanna sign up for the newsletter?</h3>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <input type="submit" id="submit" value="Join the bass bros!">
+      </form>
+    </div>
+  </section>
 </body>

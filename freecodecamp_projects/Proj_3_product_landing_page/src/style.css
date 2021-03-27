@@ -1,227 +1,159 @@
-* Limit the container in * width for big screens */ .container {
-  width: 960px;
-  max-width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Poppins";
 }
-img {
-  height: auto;
-  max-width: 70px;
-  float: left;
-  margin-left: 20px;
-  display: inline;
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-/**
- * By using display: flex
- * Logo and nav are in 2 cols
- * align-items make them
- * vertically centered
- * justify-content distribute
- * horizontal spaces around
- * and flex-wrap break the
- * things in two lines in
- * small screens
- */
-#header .container {
+
+.navbar .container {
   display: flex;
+  place-content: space-between;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+}
+
+.navbar {
   background: black;
-  position: fixed;
-  top: 0;
+  padding: 1px;
   width: 100%;
+  position: fixed;
+}
+
+
+#header-img {
+  margin: 0 -10em 0 3em;
+  padding: 0;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+  margin-left: -25em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 4em;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#about {
+  padding: 6em 2em 0 2em;
+  margin: 0 8em;
+  text-align: center;
 }
 
 h1 {
-  color: white;
-  flex: 1;
-  margin-left: 20px;
+  font-size: 2.2em;
+  line-height: 1.3em;
+  margin-top: 0.2em;
 }
-/**
- * The followings are to
- * make things more
- * clean and airy
- * and contents centered
- */
-.nav-bar ul {
+
+#inspiration .container {
   text-align: center;
-  margin-right: 2em;
-}
-.nav-bar li {
-  display: inline;
-  padding: 10px;
-  list-style: none;
-}
-.nav-bar a {
-  display: inline-block;
-  padding: 1em 1.5em;
-  color: white;
-  font-size: 110%;
+  padding: 0.5em;
+  margin-bottom: 2.5em;
 }
 
-/* Change background on mouse-over */
-.nav-bar a:hover {
-  background: #92dff3;
-  color: black;
-}
-
-/* Main content */
-.main {
-  margin-top: 100px; /* Add a top margin to avoid content overlay */
-}
-
-body {
-  background-color: #eee;
-  font-family: "Lato", sans-serif;
-}
-
-@media (min-width: 960px) {
-  #header .container {
-    justify-content: space-between;
-  }
-}
-/*general*/
-h2 {
-  margin: 10px 0 10px 0;
-  padding: 5px;
-}
-p {
-  margin: 0 60px 10px 60px;
-}
-
-#about,
-#inspiration {
-  text-align: center;
-  margin: 1em 2em 1em 2em;
-}
-/*middle*/
-h3 {
+.iframe-container {
   display: block;
+  margin-top: 1em;
 }
-iframe {
-  margin-bottom: 60px;
-}
-/*end*/
 
-h4 {
-  display: block;
-  margin-top: 0px;
-  font-size: 1.4em;
-  font-weight: bold;
+#pricing {
+  background: #20272e;
+  color: white;
+  padding: 2.5em 1em;
 }
-.product > button {
-  border: 0;
-  margin: 15px 0;
-  background-color: #f1c40f;
-  font-weight: 400;
-}
-.btn {
-  padding: 0 20px;
-  height: 40px;
-  font-size: 1em;
-  font-weight: 900;
-  text-transform: uppercase;
-  border: 3px black solid;
-  border-radius: 2px;
-  background: transparent;
-  cursor: pointer;
-}
-button {
-  appearance: auto;
-  -webkit-writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-}
-.product {
+
+#pricing .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   text-align: center;
-  width: calc(100% / 3);
-  margin: 10px;
-  border: 0.5px solid #000;
+  padding: 0 11em;
+}
+
+.product {
+  text-align: center;
+  margin: 3px;
+  border: 1px solid orange;
   border-radius: 4px;
+  padding: 1em;
 }
 
 .product > .level {
-  background-color: #ddd;
-  padding: 20px 0;
+  background-color: orange;
+  color: black;
+  padding: 8px;
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-h5 {
-  margin-top: 15px;
-  display: block;
-  font-size: 1.4em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-.product > ol {
-  margin: 10px 0;
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  text-align: center;
-}
-
 .product > ol > li {
-  padding: 5px 5px;
+  padding: 3px 0;
   list-style: none;
-  display: list-item;
-  text-align: center;
-  margin-right: 40px;
+  margin-right: 27px;
 }
-@media (max-width: 800px) .product {
-  max-width: 300px;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-/*form*/
 
-#pricing {
-  /*display: flex; HAVE TO FIX*/ 
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 200px;
+.product > button:hover {
+  background-color: lightblue;
+  transition: background-color 1s;
 }
-#pricing input[type="email"] {
-  max-width: 350px;
-  width: 100%;
-  padding: 5px;
-}
-#pricing input[type="submit"] {
-  max-width: 200px;
-  width: 100%;
-  height: 30px;
-  margin: 15px 0;
+
+.product > button {
   border: 0;
-  background-color: #f1c40f;
+  border-radius: 4px;
+  margin: 10px 0;
+  background-color: orange;
+  font-weight: 700;
+  color: black;
+  padding: 3px;
 }
-form {
-  display: block;
+
+.contact {
+  background: white;
+  color: black;
   text-align: center;
-  margin-bottom: 50px;
+  padding: 3em 0;
+}
+
+h3 {
+  font-size: 1.4em;
+  padding-left: 1.2em;
+}
+
+input {
+  width: 45%;
+  padding: 0.9em;
+  margin-bottom: 1.3em;
+  border-radius: 0.5em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 4em;
+  display: inline-block;
+  padding: 0.6em 0.4em;
+  width: unset;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) #header {
+  flex-wrap: wrap;
 }

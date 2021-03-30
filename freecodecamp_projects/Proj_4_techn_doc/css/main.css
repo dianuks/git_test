@@ -1,0 +1,62 @@
+/* mobile first :) */
+body {
+  background: #fde7e8;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  grid-template: "nav" 40% "main" auto;
+}
+
+#navbar {
+  grid-area: nav;
+  background: white;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+#navbar header {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#navbar .navi {
+  /*border: .5px solid rgb(22, 6, 6); */
+  padding: 0;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 7px;
+  border: 0.5px solid #c5c5c5;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+main {
+  grid-area: main;
+  padding: 3px 45px;
+  margin: 0;
+}
+
+main .main-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main .main-section header {
+  font-weight: 550;
+}
+
+main .main-section li {
+  margin: 0 4em;
+  padding: 3px;
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */
